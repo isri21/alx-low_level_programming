@@ -5,40 +5,24 @@
  */
 int main(void)
 {
-	int i, l, s, t;
+	int i, j;
 
-	i = 0;
-	l = i;
-	while (i < 10)
-	{
-		while (l < 10)
-		{
-			s = i;
-			t = l + 1;
-			while (s < 10)
+	for (i = 0; i != 100; i++)
+
+		for (j = 0; j != 100; j++)
+			if (j > i)
 			{
-				while (t < 10)
-					putchar(i + '0');
-					putchar(l + '0');
-					putchar(' ');
-					putchar(s + '0');
-					putchar(t + '0');
-					if ((i == 9) && (l == 8) && (s == 9) && (t == 9))
-						;
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					t++;
-				t = 0;
-				s++;
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(32);
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(32);
+				}
 			}
-			l++;
-		}
-		l = 0;
-		i++;
-	}
 	putchar('\n');
 	return (0);
 }
