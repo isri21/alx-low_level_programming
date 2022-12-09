@@ -5,7 +5,7 @@
 
 /**
 * main -  This is the description for the main function.
-* Return: Will return 0 
+* Return: Will return 0
 */
 
 int main(void)
