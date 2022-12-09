@@ -1,16 +1,11 @@
 #include <stdio.h>
-
 /**
  * main - This is the main function
  * Return: Returns 0
  */
-
 int main(void)
 {
-	int i;
-	int l;
-	int s;
-	int t;
+	int i, l, s, t;
 
 	i = 0;
 	l = i;
@@ -23,7 +18,6 @@ int main(void)
 			while (s < 10)
 			{
 				while (t < 10)
-				{
 					putchar(i + '0');
 					putchar(l + '0');
 					putchar(' ');
@@ -37,7 +31,6 @@ int main(void)
 						putchar(' ');
 					}
 					t++;
-				}
 				t = 0;
 				s++;
 			}
