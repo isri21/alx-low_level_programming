@@ -17,9 +17,10 @@ int main(void)
 * Return: void
 */
 
-char print_alphabet(void)
+void print_alphabet(void)
 {
-	for (char c = 'a'; c <= 'z'; c++)
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
