@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
 * main - This is the main functio
+*
 * Return: 0
 */
 
-int main()
+int main(void)
 {
 	putchar('_');
 	putchar('p');
@@ -16,5 +18,5 @@ int main()
 	putchar('r');
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
