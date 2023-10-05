@@ -3,8 +3,8 @@
 /**
 * main - Entry point of the program.
 *
-* Description: prints exactly "with proper grammar,
-* but the outcome is a piece of art,", followed by a new line.
+* Description: prints prints the size of various data types
+* on the computer it is compiled and run on.
 * Return: 0
 */
 
