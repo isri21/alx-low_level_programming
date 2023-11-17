@@ -1,12 +1,12 @@
+#include "lists.h"
 #include <stdio.h>
-
-void initial(void) __attribute__ ((constructor));
-
 /**
- * initial - prints sentence before the main function
+ * printfirst - Prints the text inside before the main function
+ *
+ * Return: void.
  */
-void intial(void)
+void printfirst(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
-
