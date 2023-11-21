@@ -7,15 +7,15 @@
 */
 void free_listint2(listint_t **head)
 {
-	listint_t *ptr = *head; /* create pointer to head */
-	listint_t *temp; /* create temporary pointer to head */
+	listint_t *temp; /* create temporary pointer to store next node */
 
-	while (ptr != NULL) /* run untill the head is NULL*/
+	if (head == NULL)
+		return;
+	while (*head != NULL) /* run untill the head is NULL*/
 	{
-		temp = ptr->next; /* move the temp to the next node */
-		free(ptr); /* free the current node */
+		temp = (*head)->next; /* set this to the next node*/
+		free(*head); /* free the current node */
 		/* set the head to the next node, which we stored in the temp */
-		ptr = temp;
+		*head = temp;
 	}
-	*head = NULL; /* set head to NULL */
 }

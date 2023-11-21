@@ -7,11 +7,14 @@
 */
 int pop_listint(listint_t **head)
 {
-	listint_t *ptr = *head; /* create pointer to first node */
-	int n = ptr->n; /* store data in head */
+	listint_t *ptr;
+	int n;
 
 	if (*head == NULL) /* if list is empty return 0*/
 		return (0);
+
+	ptr = *head; /* create pointer to first node */
+	n = ptr->n; /* store data of head */
 	*head = ptr->next; /* move head to the next node */
 	free(ptr); /* delete the first node */
 	return (n); /* return data of head node deleted */
