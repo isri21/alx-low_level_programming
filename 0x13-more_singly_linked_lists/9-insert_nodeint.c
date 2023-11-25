@@ -33,7 +33,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	temp->n = n; /* set the data in the new node */
 	if (idx == 0) /* if index is 0 add it to the begining of the list */
 	{
-		temp->next = *head;
 		*head = temp;
 		return (temp);
 	}
